@@ -1,8 +1,7 @@
 import java.io.*;
 import java.net.*;
 import java.util.*;
-class Clientfile
-{
+class Clientfile{
   public static void main(String args[]) {
     try {
       BufferedReader in = new BufferedReader(new
@@ -33,5 +32,5 @@ class Clientfile
       catch (Exception e) {
         System.out.println(e);
       }
-    } 
+    }
 }
