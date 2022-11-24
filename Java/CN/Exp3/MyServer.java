@@ -6,7 +6,8 @@ public class MyServer{
       ServerSocket ss = new ServerSocket(6666);
       System.out.println("Server is on..... Listening...... ");
       Socket s = ss.accept();
-      DataInputStream dis = new DataInputStream(s.getInputStream());  String str = (String) dis.readUTF();
+      DataInputStream dis = new DataInputStream(s.getInputStream());
+      String str = (String) dis.readUTF();
       System.out.println("message= " + str);
       ss.close();
     }

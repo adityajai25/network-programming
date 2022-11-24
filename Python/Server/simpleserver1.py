@@ -9,3 +9,5 @@ while(True):
     print("Got acceptance from ",addr," successfully")
     c.send("Message received thanks for connecting")
     c.close()
+    #uff
+    

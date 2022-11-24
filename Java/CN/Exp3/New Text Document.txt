@@ -1,0 +1,15 @@
+import java.net.*;
+import java.io.*;
+public class EServer{
+	public static void main(String args[]}{
+		ServerSocket ss = new ServerSocket(6666);
+		String line;
+		Socket s = ss.accept();
+		DataInputStream dis =new DataInputStream(s.getInputStream());
+		PrintStream ps = new PrintStream(s.getOutputStream());
+		while(true){
+			line = dis.readline();
+			ps.println(line);
+		}
+ 	}
+}

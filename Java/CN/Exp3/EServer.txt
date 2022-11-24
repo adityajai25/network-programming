@@ -1,0 +1,24 @@
+#Server
+
+ServerSocket ss = new ServerSocket(1000);
+Socket s = ss.accept();
+String line;
+DataInputStream dis = DataInputStream(s.getInputStream());
+PrintStream ps = PrintStream(s.getOutputStream());
+while(true){
+	dis.readLine();
+	ps.println(line);
+}
+
+#Client
+
+InetAddress ia = InetAddress.getLocalHost();
+Socket s = new Socket(ia,1000);
+PrintStream ps = PrintStream(s.getOutputStream())
+DataInputStream dis1 = DataInputStream(System.in);
+DataInputStream dis2 = DataInputStream(s.getInputStream());
+while(true){
+	System.out.println("Client");
+	line = is.readLine();
+	ps.println(line);
+	
